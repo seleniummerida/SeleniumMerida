@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NegativeTestSuite]">
+  <parameter name="password" value="incorrectPassword"/>
+  <parameter name="browser" value="IE"/>
+  <parameter name="expectedMessage" value="Your password is invalid!"/>
+  <parameter name="username" value="tomsmith"/>
+  <test name="NegativeUsernameTest-FF(failed)">
+    <parameter name="password" value="SuperSecretPassword!"/>
+    <parameter name="browser" value="IE"/>
+    <parameter name="expectedMessage" value="Your username is invalid!"/>
+    <parameter name="username" value="incorrectUsername"/>
+    <classes>
+      <class name="com.seleniumadvanced.github.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.seleniumadvanced.github.NegativeTests -->
+    </classes>
+  </test> <!-- NegativeUsernameTest-FF(failed) -->
+  <test name="NegativePasswordTest-FF(failed)">
+    <parameter name="password" value="incorrectPassword"/>
+    <parameter name="browser" value="IE"/>
+    <parameter name="expectedMessage" value="Your password is invalid!"/>
+    <parameter name="username" value="tomsmith"/>
+    <classes>
+      <class name="com.seleniumadvanced.github.NegativeTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.seleniumadvanced.github.NegativeTests -->
+    </classes>
+  </test> <!-- NegativePasswordTest-FF(failed) -->
+</suite> <!-- Failed suite [NegativeTestSuite] -->
